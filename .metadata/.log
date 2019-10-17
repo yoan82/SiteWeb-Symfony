@@ -1,0 +1,30 @@
+!SESSION 2019-10-17 09:27:09.769 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-10-17 09:29:37.537
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Mod_loc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2019-10-17 09:30:58.325
+!MESSAGE https://github.com/yoan82/SiteWeb-Symfony/tree/master/MonSite/SiteTest: https://github.com/yoan82/SiteWeb-Symfony/tree/master/MonSite/SiteTest/info/refs?service=git-upload-pack not found: Not Found
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/yoan82/SiteWeb-Symfony/tree/master/MonSite/SiteTest: https://github.com/yoan82/SiteWeb-Symfony/tree/master/MonSite/SiteTest/info/refs?service=git-upload-pack not found: Not Found
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:222)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:161)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$8.run(SourceBranchPage.java:340)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.com/yoan82/SiteWeb-Symfony/tree/master/MonSite/SiteTest: https://github.com/yoan82/SiteWeb-Symfony/tree/master/MonSite/SiteTest/info/refs?service=git-upload-pack not found: Not Found
+	at org.eclipse.jgit.transport.TransportHttp.createNotFoundException(TransportHttp.java:522)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:554)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:392)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:200)
+	... 4 more
