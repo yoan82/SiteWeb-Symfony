@@ -28,3 +28,24 @@ Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.c
 	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:392)
 	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:200)
 	... 4 more
+
+!ENTRY org.eclipse.jface 2 0 2019-10-17 09:48:19.543
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-17 09:48:19.543
+!MESSAGE A conflict occurred for ALT+CTRL+S:
+Binding(ALT+CTRL+S,
+	ParameterizedCommand(Command(org.eclipse.php.ui.edit.text.source.quickMenu,Show Source Quick Menu,
+		Shows the source quick menu,
+		Category(org.eclipse.php.ui.category.source,Source,PHP Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@bf29f54,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.dltk.ui.context.views,,,system)
+Binding(ALT+CTRL+S,
+	ParameterizedCommand(Command(org.eclipse.wst.server.stop,Stop,
+		Stop the server,
+		Category(org.eclipse.wst.server.ui,Server,Server,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@735ae7f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.serverViewScope,,,system)
